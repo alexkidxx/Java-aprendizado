@@ -1,0 +1,17 @@
+/AutenticadorDAO.class
+/Comentario.class
+/ComentarioDAO.class
+/CriadorDeComentarioDAO.class
+/CriadorDePostDAO.class
+/CriadorDeUsuarioDAO.class
+/LoginServlet.class
+/Topico.class
+/TopicoDAO.class
+/TopicosServlet.class
+/Usuario.class
+/criaUsuarioServlet.class
+/criarComentarioServlet.class
+/criarPostServlet.class
+/exibirRankingServlet.class
+/exibirTopicoServlet.class
+/inicio.xml

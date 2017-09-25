@@ -1,0 +1,16 @@
+<dataset>
+    <TOPICO TITULO="Como fazer hamburguer de miojo?" CONTEUDO="Boa tarde cumpadres, alguém aí sabe a receita do maravilhoso Hamburger de miojo?" LOGIN="elis"/>
+    <TOPICO TITULO="Tirar print com LG G3" CONTEUDO="Povo, me ajuda, não sei tirar print com esse celular" LOGIN="alex"/>
+    <TOPICO TITULO="Quantidade de madeira pra fazer uma embarcação" CONTEUDO="Nobres viajantes, marujos de água doce, por favor me digam, com quanto paus se faz a bendita canoa?" LOGIN="alex"/>
+    <TOPICO TITULO="Tinta HP" CONTEUDO="Alguém sabe como que faz para baixar tinta da impressora HR, pq a minha acabou." LOGIN="pipoca"/>
+    
+    <USUARIO EMAIL="alex.coursera@ita.com" LOGIN="alex" NOME="Alexsandro Martins Dias" PONTOS="10" SENHA="1234"/>
+    <USUARIO EMAIL="clovis.coursera@ita.com" LOGIN="clovis" NOME="Clovis Fernandes" PONTOS="20" SENHA="1234"/>
+    <USUARIO EMAIL="guerra.coursera@ita.com" LOGIN="guerra" NOME="Eduardo Guerra" PONTOS="15" SENHA="1234"/>
+    <USUARIO EMAIL="temer.coursera@ita.com" LOGIN="temer" NOME="Michel Temer" PONTOS="11" SENHA="1234"/>
+    <USUARIO EMAIL="lula.coursera@ita.com" LOGIN="lula" NOME="Luiz Inácio Lula da Silva" PONTOS="13" SENHA="1234"/>
+    
+    <COMENTARIO COMENTARIO="Acho que ví num video de youtube" LOGIN="clovis" ID_TOPICO="1" />
+    <COMENTARIO COMENTARIO="Deve ser ruin"  LOGIN="guerra" ID_TOPICO="1"/>
+    <COMENTARIO COMENTARIO="Entra no site e baixa pela aba tintas" ID_TOPICO="4" LOGIN="alex" ID_TOPICO="4"/>
+</dataset>
