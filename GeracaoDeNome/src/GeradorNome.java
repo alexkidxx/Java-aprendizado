@@ -4,6 +4,11 @@ public class GeradorNome {
 	private Tratamento tratamento = new NullTratamento();
 	
 	
+	public Tratamento getTratamentoStrategy(){
+		
+		return tratamento;
+	}
+	
 	
 public void setTratamento(Tratamento tratamento) {
 		this.tratamento = tratamento;

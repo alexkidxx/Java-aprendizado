@@ -46,4 +46,28 @@ public class TesteGeradorNome {
 		
 	}
 	
+	@Test
+	public void excelentissimoMagnificoDoutor() {
+		GeradorNome gn = new GeradorNomeBuilder().criarDoutor().excelentissimo().magnifico().gerar();
+		String nome = gn.gerarNome("Alex");
+		assertEquals("Excelentissimo Magnifico Doutor Alex",nome);
+		
+	}
+	
+	@Test
+	public void pessoaDeSalvador() {
+		GeradorNome gn = new GeradorNomeBuilder().criarPessoa().de("Salvador").gerar();
+		String nome = gn.gerarNome("Alex");
+		assertEquals("Alex de Salvador",nome);
+		
+	}
+	
+	@Test
+	public void magnificoDoutorDeSalvadorDeCeara() {
+		GeradorNome gn = new GeradorNomeBuilder().criarDoutor().magnifico().de("Salvador").de("Ceara").gerar();
+		String nome = gn.gerarNome("Alex");
+		assertEquals("Magnifico Doutor Alex de Salvador de Ceara",nome);
+		
+	}
+	
 }
