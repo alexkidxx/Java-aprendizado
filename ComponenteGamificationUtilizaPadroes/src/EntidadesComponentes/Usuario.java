@@ -18,16 +18,7 @@ public class Usuario {
 	}
 
 	public void addAchievement(Achievement q) {
-	
-	if(!ach.containsKey(q.getNome())){
-	this.ach.put(q.getNome(), q);
-	}else{
-		if(q.getClass()==Points.class){
-			Achievement j = new Points(q.getNome(), q.getValor() + ach.get(q.getNome()).getValor());
-			ach.put(q.getNome(),j);
-		}
-	}
-	
+	ach.put(q.getNome(), q);
 	
 	}
 
@@ -40,6 +31,12 @@ public class Usuario {
 	public String toString() {
 		return "Usuario [name=" + name + ", ach=" + ach + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
 				+ ", toString()=" + super.toString() + "]";
+	}
+
+	public boolean possuiEssaConquista(String nameConquista) {
+		if(ach.containsKey(nameConquista))
+		return true;
+		return false;
 	}
 
 	

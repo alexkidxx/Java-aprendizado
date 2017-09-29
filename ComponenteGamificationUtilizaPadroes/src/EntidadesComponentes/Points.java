@@ -19,6 +19,23 @@ public class Points extends Achievement {
 		return valor;
 	}
 
+	@Override
+	public void addAchievement(Usuario u) {
+			
+		
+			if(u.possuiEssaConquista(this.name)){
+			Integer valorAntigo = ((Points) u.getAchievement(this.getNome())).getValor();
+			this.valor += valorAntigo;
+			
+			u.addAchievement(this);
+			}else{
+				
+				u.addAchievement(this);
+			}
+				
+	
+	}
+
 	
 
 }
