@@ -16,6 +16,10 @@ public abstract class Achievement {
 	
 	public abstract void addAchievement(Usuario u);
 
+
+	@Override
+	public abstract String toString(); 
+
 	
 
 	

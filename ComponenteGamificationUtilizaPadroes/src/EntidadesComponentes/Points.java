@@ -36,6 +36,11 @@ public class Points extends Achievement {
 	
 	}
 
+	@Override
+	public String toString() {
+		return  name + getValor();
+	}
+
 	
 
 }

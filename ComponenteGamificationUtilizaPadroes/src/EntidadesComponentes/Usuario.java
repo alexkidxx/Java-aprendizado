@@ -39,6 +39,11 @@ public class Usuario {
 		return false;
 	}
 
+	public Object getTodosAchievements() {
+		
+		return ach;
+	}
+
 	
 	
 }

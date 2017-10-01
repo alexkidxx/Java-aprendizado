@@ -2,7 +2,7 @@ package testePackage;
 
 
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -14,6 +14,8 @@ import EntidadesComponentes.Usuario;
 
 
 public class TesteUsuario {
+	
+	
 
 	@Test
 	public void testAchievementeDeMesmoNomeSomaPontos() {
@@ -39,5 +41,19 @@ public class TesteUsuario {
 		assertEquals(5,valorDaInstanciaPrimeiroChefe);
 		
 	}
+	@Test
+	public void testAchievementeDuasInstanciasBadgeIguais() {
+		Achievement a = new Badge("Matador de aluguel");
+		Achievement b = new Badge("Matador de aluguel");
+		Usuario u = new Usuario("Alex");
+		b.addAchievement(u);
+		a.addAchievement(u);
+		
+	
+	
+		
+		assertEquals("{Matador de aluguel=null}",u.getTodosAchievements().toString());
+	}
+	
 
 }
