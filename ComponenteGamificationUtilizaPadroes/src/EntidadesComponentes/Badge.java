@@ -1,43 +1,50 @@
 package EntidadesComponentes;
+
+import java.util.List;
+
+import interfaces.AchievementStorage;
+
 public class Badge extends Achievement {
 
-	private String name;
+
 	
 	public Badge(String name) {
 		super(name);
 		
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		return result;
-	}
+	public void addd(String user, AchievementStorage memo) {
+	
+		Usuario b = memo.getUser(user);
+		
 
-	public boolean equals(Badge obj) {
-		if(this.name == obj.getNome())
-			return true;
-					return false;
+	
+		if(b!=null){
+	
+	
+			if(!memo.possuiEssaConquista(this.getNome(), user))
+				b.addConquista(this);
+		
+			}else{	
+				
+			Usuario l = new Usuario(user);
+			l.addConquista(this);
+			((MemoryAchievementStorage) memo).addUser(l);
+			}
+		
+			
+			
 	}
-
-	@Override
-	public void addAchievement(Usuario u) {
-		if(!u.possuiEssaConquista(this.name)){
-			u.addAchievement(this);
-		}
 		
-		
-		
-		
-	}
 
 	@Override
 	public String toString() {
-		return  name;
+		return "Badge [name=" + name + "]";
 	}
 
 	
-	
 }
+
+	
+
+
