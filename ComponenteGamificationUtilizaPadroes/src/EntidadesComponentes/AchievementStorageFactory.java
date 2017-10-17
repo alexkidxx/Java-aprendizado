@@ -12,25 +12,29 @@ public class AchievementStorageFactory {
 	private AchievementStorageFactory(AchievementStorage a) {
 		
 		setAchievementStorage(a);
-		
-		
-	}
-
-	public static AchievementStorage getAchievementStorage(AchievementStorage a){
-		if(as == null){
-		as = a;
-			return  a;
-		
 		}
+
+	public static AchievementStorage getAchievementStorage(){
+	if(as!=null){
 		return as;
+	}else{
+		
+		setAchievementStorage(new MemoryAchievementStorage());
+	}
+	return as;
+	
 		
 	
 		
 	}
 	
-	void setAchievementStorage(AchievementStorage a){
+	static void setAchievementStorage(AchievementStorage a){
+		if(as == null)
+			as = a;
+		}
 		
-		this.as = a;
+		
+		
 	}
 
-}
+
